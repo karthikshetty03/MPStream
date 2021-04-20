@@ -15,7 +15,7 @@ if '__main__' == __name__:
   # Initialise the Mininet
   net = Mininet(link=TCLink)
   key = "net.mptcp.mptcp_enabled"
-  value = 1
+  value = 0
 
   # To run commands in the terminal
   p = Popen("sysctl -w %s=%s" % (key, value), shell=True, stdout=PIPE, stderr=PIPE)
