@@ -9,7 +9,6 @@ from mininet.log import setLogLevel
 
 
 if '__main__' == __name__:
-
   setLogLevel('info')
 
   # Initialise the Mininet
@@ -39,15 +38,12 @@ if '__main__' == __name__:
   net.build()
 
   # Set properties of the network configuration
-    
   # Clear the IP addresses
   router.cmd("ifconfig router-eth0 0")
   router.cmd("ifconfig router-eth1 0")
   router.cmd("ifconfig router-eth2 0")
-
   client.cmd("ifconfig client-eth0 0")
   client.cmd("ifconfig client-eth1 0")
-
   server.cmd("ifconfig server-eth0 0")
 
   # Enable IP forwarding
