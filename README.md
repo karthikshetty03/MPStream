@@ -1,23 +1,16 @@
-# Virtual Network Setup
-
-We design a virtual network through a python script using the mininet library. It has two hosts connected through a router.
-
+# Network Programming Course Project
+## Phase-1: Virtual Network, MPTCP, MPQUIC Setups
+### We designed a virtual network through a python script using the mininet library. It has two hosts connected through a router.
 ## Network Topology
 Hosts - client, server
 Router - router
-
 Interfaces - client to router 1, client to router 2, router to server
-
-
-
 <br>
 
-# Video Streaming based on MP-TCP and MP-QUIC
-Network Programming Project
-It allows you to stream your your webcam video from one system to the other. The protocols used for streaming are MP-TCP and MP-QUIC.
-You can separately try out MP-TCP or MP-QUIC while using this code. Please check the requirement below for running MP-TCP or MP-QUIC.
+# Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
-## Requirements
+### Innovation: It allows you to stream your your webcam video from one system to the other. The protocols used for streaming are MP-TCP and MP-QUIC.You can separately try out MP-TCP or MP-QUIC while using this code. Please check the requirement below for running MP-TCP or MP-QUIC.
+## Requirements:
 ### MP-TCP
 - MP-TCP Kernel (Not supported on all OS):
 For Linux based OS, please refer to the following [link](https://multipath-tcp.org/pmwiki.php/Users/AptRepository/ "link") for installing MP-TCP protocol on your kernel.
@@ -70,10 +63,10 @@ go build client-mpquic.go
 ```
 
 ## Team Members
-Sukrit 2018A7PS0205H
-Karthik Shetty 2018A7PS0141H
-Thakkar Preet Girish 2018A7PS0313H
-Koustubh Sharma 2018A7PS0114H
+### Sukrit 2018A7PS0205H
+### Karthik Shetty 2018A7PS0141H
+### Thakkar Preet Girish 2018A7PS0313H
+### Koustubh Sharma 2018A7PS0114H
 # References
 
 ### Video-Streaming-using-MPTCP-and-MPQUIC-protocols
