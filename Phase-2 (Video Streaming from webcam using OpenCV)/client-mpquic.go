@@ -12,7 +12,7 @@ import (
 	"gocv.io/x/gocv"
 )
 
-const addr = "10.0.0.2:"+config.PORT
+const addr = "0.0.0.0:"+config.PORT
 var pl = fmt.Println
 var p = fmt.Print
 
