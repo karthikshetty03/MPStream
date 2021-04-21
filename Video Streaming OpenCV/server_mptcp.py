@@ -5,14 +5,18 @@ import utils
 from datetime import datetime
 
 def startServer(host,port):
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)             # Create a socket object
+    # Create a socket object
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)            
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    s.bind(('0.0.0.0', port)) # Bind to the port
-    s.listen()                     # Now wait for client connection.
+    # Bind to the port
+    s.bind(('0.0.0.0', port)) 
+    # Now wait for client connection.
+    s.listen()                     
     
     print('Server listening....')
     
-    conn, addr = s.accept()     # Establish connection with client.
+    # Establish connection with client.
+    conn, addr = s.accept()     
     print('Got connection from', addr)
     
     cap  = cv2.VideoCapture(0)
