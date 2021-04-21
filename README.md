@@ -67,10 +67,7 @@ go build client-mpquic.go
 ### Karthik Shetty 2018A7PS0141H
 ### Thakkar Preet Girish 2018A7PS0313H
 ### Koustubh Sharma 2018A7PS0114H
-# References
-
-### Video-Streaming-using-MPTCP-and-MPQUIC-protocols
-
+## References
 ### [Reference 1](https://github.com/iamkroot/multipath-video)
 ### [Reference 2](https://github.com/ujjwal-raizada/multipath-quic-experiments)
 ### [Reference 3](https://github.com/prat-bphc52/VideoStreaming-MPTCP-MPQUIC)
