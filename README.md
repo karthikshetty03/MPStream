@@ -1,4 +1,4 @@
-# Network Programming Course Project
+## Network Programming Course Project
 ## Phase-1: Virtual Network, MPTCP, MPQUIC Setups
 ### We designed a virtual network through a python script using the mininet library. It has two hosts connected through a router.
 ## Network Topology
@@ -7,9 +7,9 @@ Router - router
 Interfaces - client to router 1, client to router 2, router to server
 <br>
 
-# Phase-2: Video Streaming based on MP-TCP and MP-QUIC
+## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
-### Innovation: It allows you to stream your your webcam video from one system to the other. The protocols used for streaming are MP-TCP and MP-QUIC.You can separately try out MP-TCP or MP-QUIC while using this code. Please check the requirement below for running MP-TCP or MP-QUIC.
+### Innovation: It allows you to stream your webcam video from one system to the other. The protocols used for streaming are MP-TCP and MP-QUIC.You can separately try out MP-TCP or MP-QUIC while using this code. Please check the requirement below for running MP-TCP or MP-QUIC.
 ## Requirements:
 ### MP-TCP
 - MP-TCP Kernel (Not supported on all OS):
