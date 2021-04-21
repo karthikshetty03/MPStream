@@ -4,7 +4,6 @@ from mininet.link import Link, TCLink,Intf
 from subprocess import Popen, PIPE
 from mininet.log import setLogLevel
 
-
 if '__main__' == __name__:
   setLogLevel('info')
   net = Mininet(link=TCLink)
