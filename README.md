@@ -70,11 +70,10 @@ go build client-mpquic.go
 ```
 
 ## Team Members
-- [Prateek Agarwal](https://github.com/prat-bphc52/ "Prateek Agarwal") - 2017A7PS0075H
-- [Naman Arora](https://github.com/namanarora00/ "Naman Arora") - 2017A7PS0175H
-- [Utkarsh Grover](https://github.com/utkgrover/ "Utkarsh Grover") - 2017A7PS1428H
-- Samar Kansal - 2016AAPS0196H
-
+Sukrit 2018A7PS0205H
+Karthik Shetty 2018A7PS0141H
+Thakkar Preet Girish 2018A7PS0313H
+Koustubh Sharma 2018A7PS0114H
 # References
 
 ### Video-Streaming-using-MPTCP-and-MPQUIC-protocols
