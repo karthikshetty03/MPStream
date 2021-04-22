@@ -13,7 +13,7 @@ Hosts: client, server
 Router: router
 Interfaces: client to router 1, client to router 2, router to server
 ```
-<a align="center" href="https://imgbb.com/"><img src="https://i.ibb.co/jf7Z0rD/img.png" alt="img" border="0"></a>
+<img align="center" src="https://i.ibb.co/jf7Z0rD/img.png"/>
 
 
 <br/>
