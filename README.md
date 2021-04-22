@@ -13,7 +13,7 @@ Hosts: client, server
 Router: router
 Interfaces: client to router 1, client to router 2, router to server
 ```
-![Topology](https://ibb.co/YQvTnLh)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/jf7Z0rD/img.png" alt="img" border="0"></a>
 
 
 ## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
