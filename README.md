@@ -3,9 +3,9 @@
 
 ## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
 
-```
+<p>
 We designed a virtual network suing a python script with the help of mininet library. It has two hosts connected through a router
-```
+</p>
 
 ## Network Topology
 ```
@@ -13,8 +13,10 @@ Hosts: client, server
 Router: router
 Interfaces: client to router 1, client to router 2, router to server
 ```
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/jf7Z0rD/img.png" alt="img" border="0"></a>
+<a align="center" href="https://imgbb.com/"><img src="https://i.ibb.co/jf7Z0rD/img.png" alt="img" border="0"></a>
 
+
+<br/>
 
 ## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
