@@ -1,6 +1,9 @@
 # Network Programming Course Project
 <br/>
 
+<img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/818/5112570818_02c498e2-a7fb-423e-8f95-82e7be54f2c3.png?cb=1619086571" />
+
+
 ## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
 
 <p>
@@ -13,8 +16,7 @@ Hosts: client, server
 Router: router
 Interfaces: client to router 1, client to router 2, router to server
 ```
-<img align="center" src="https://i.ibb.co/jf7Z0rD/img.png"/>
-
+<img src="https://i.ibb.co/jf7Z0rD/img.png"/>
 
 <br/>
 
