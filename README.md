@@ -1,11 +1,20 @@
-## Network Programming Course Project
-## Phase-1: Virtual Network, MPTCP, MPQUIC Setups
-### We designed a virtual network through a python script using the mininet library. It has two hosts connected through a router.
+# Network Programming Course Project
+<br/>
+
+## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
+
+```
+We designed a virtual network suing a python script with the help of mininet library. It has two hosts connected through a router
+```
+
 ## Network Topology
-Hosts - client, server
-Router - router
-Interfaces - client to router 1, client to router 2, router to server
-<br>
+```
+Hosts: client, server
+Router: router
+Interfaces: client to router 1, client to router 2, router to server
+```
+![Topology](https://ibb.co/YQvTnLh)
+
 
 ## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
