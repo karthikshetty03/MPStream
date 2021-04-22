@@ -1,7 +1,6 @@
 
-<img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/818/5112570818_02c498e2-a7fb-423e-8f95-82e7be54f2c3.png?cb=1619086571" />
+<img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/818/5112570818_02c498e2-a7fb-423e-8f95-82e7be54f2c3.png?cb=1619086571" algn="center" width="800" height="100"/>
 
-<br/>
 <br/>
 
 ## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
