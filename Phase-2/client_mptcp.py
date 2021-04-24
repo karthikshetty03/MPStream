@@ -93,7 +93,7 @@ def startClient(host, port):
     print("Ending video streaming at ", endtime)
     print("Frame Received ", count)
 
-    convert_frames_to_video('images/', 'output.avi', 10.0)
+    convert_frames_to_video('images/', 'output.avi', 12.0)
 
     cv2.destroyAllWindows()
     s.close()

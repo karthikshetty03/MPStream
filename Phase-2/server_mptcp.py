@@ -34,7 +34,7 @@ def startServer(host, port):
         frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
         conn.sendall(utils.encodeNumPyArray(frame))
         count = count + 1
-        if count == 300:
+        if count == 100:
             break
     cap.release()
     cv2.destroyAllWindows()
