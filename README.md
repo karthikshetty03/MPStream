@@ -92,14 +92,10 @@ go build client-mpquic.go
 <br/>
 
 ### Team Members
-- ### Sukrit 2018A7PS0205H
-- ### Karthik Shetty 2018A7PS0141H
-- ### Thakkar Preet Girish 2018A7PS0313H
-- ### Koustubh Sharma 2018A7PS0114H
-
+- ### Sukrit (2018A7PS0205H)
+- ### Karthik Shetty (2018A7PS0141H)
+- ### Thakkar Preet Girish (2018A7PS0313H)
+- ### Koustubh Sharma (2018A7PS0114H)
 
 <br/>
-## References
-### [Reference 1](https://github.com/iamkroot/multipath-video)
-### [Reference 2](https://github.com/ujjwal-raizada/multipath-quic-experiments)
-### [Reference 3](https://github.com/prat-bphc52/VideoStreaming-MPTCP-MPQUIC)
+
