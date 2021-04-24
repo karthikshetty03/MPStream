@@ -5,6 +5,8 @@ import numpy as np
 import cv2
 from datetime import datetime
 
+from make_vid import convert_frames_to_video
+
 MAX_BYTES = 100000
 
 
@@ -14,7 +16,10 @@ class DataExceededError(Exception):
 
 def startClient(host, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_TCP, 42, 1)
     s.connect((host, port))
+
+    counter = 0
 
     starttime = datetime.now()
     print("Starting Video Streaming at ", starttime)
@@ -78,6 +83,8 @@ def startClient(host, port):
                             cols2 = -1
                             rows = 0
                             cols = 0
+                            cv2.imwrite(f'images/frame{counter}.jpg', frameOld)
+                            counter += 1
                             cv2.imshow("Output", frameOld)
                             cv2.waitKey(1)
         except DataExceededError:
@@ -85,6 +92,9 @@ def startClient(host, port):
     endtime = datetime.now()
     print("Ending video streaming at ", endtime)
     print("Frame Received ", count)
+
+    convert_frames_to_video('images/', 'output.avi', 10.0)
+
     cv2.destroyAllWindows()
     s.close()
     print("connection closed")

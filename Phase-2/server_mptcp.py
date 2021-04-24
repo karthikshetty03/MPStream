@@ -9,6 +9,7 @@ def startServer(host, port):
     # Create a socket object
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    #s.setsockopt(socket.SOL_TCP, 42, 1)
     # Bind to the port
     s.bind(("0.0.0.0", port))
     # Now wait for client connection.
