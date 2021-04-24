@@ -1,10 +1,6 @@
-import argparse
-import socket
-import utils
+import argparse, socket, cv2, utils
 import numpy as np
-import cv2
 from datetime import datetime
-
 from make_vid import convert_frames_to_video
 
 MAX_BYTES = 100000
@@ -15,6 +11,7 @@ class DataExceededError(Exception):
 
 
 def startClient(host, port):
+    # initialize connection
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_TCP, 42, 1)
     s.connect((host, port))
@@ -24,6 +21,7 @@ def startClient(host, port):
     starttime = datetime.now()
     print("Starting Video Streaming at ", starttime)
 
+    # Recieve frames and display it in real-time
     count = 0
     frame = None
     frameOld = None
@@ -32,6 +30,7 @@ def startClient(host, port):
     rows, cols = 0, 0
     pos_i, pos_j, pos_k = 0, 0, 0
 
+    # Client side video streaming algorithm that recieves all the frames untill data is not empty
     while True:
         try:
             data_pos = 0
@@ -83,7 +82,7 @@ def startClient(host, port):
                             cols2 = -1
                             rows = 0
                             cols = 0
-                            cv2.imwrite(f'images/frame{counter}.jpg', frameOld)
+                            cv2.imwrite(f"images/frame{counter}.jpg", frameOld)
                             counter += 1
                             cv2.imshow("Output", frameOld)
                             cv2.waitKey(1)
@@ -93,7 +92,8 @@ def startClient(host, port):
     print("Ending video streaming at ", endtime)
     print("Frame Received ", count)
 
-    convert_frames_to_video('images/', 'output.avi', 12.0)
+    # convert recieved frames into a video file
+    convert_frames_to_video("images/", "output.avi", 12.0)
 
     cv2.destroyAllWindows()
     s.close()

@@ -1,7 +1,4 @@
-import argparse
-import socket
-import cv2
-import utils
+import argparse, socket, cv2, utils
 from datetime import datetime
 
 
@@ -9,7 +6,7 @@ def startServer(host, port):
     # Create a socket object
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    #s.setsockopt(socket.SOL_TCP, 42, 1)
+    # s.setsockopt(socket.SOL_TCP, 42, 1)
     # Bind to the port
     s.bind(("0.0.0.0", port))
     # Now wait for client connection.
@@ -21,6 +18,7 @@ def startServer(host, port):
     conn, addr = s.accept()
     print("Got connection from", addr)
 
+    # try to open webcam
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         conn.close()
@@ -28,6 +26,9 @@ def startServer(host, port):
 
     starttime = datetime.now()
     print("Starting Video Streaming at ", starttime)
+
+    # Server side video streaming algorithm
+    # Send frames from server
     count = 0
     while True:
         ret, frame = cap.read()
