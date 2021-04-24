@@ -2,12 +2,12 @@ package main
 
 import (
 	"crypto/tls"
+	"encoding/binary"
 	"fmt"
 	"time"
-	"encoding/binary"
 
-	utils "./utils"
 	config "./config"
+	utils "./utils"
 	quic "github.com/lucas-clemente/quic-go"
 	"gocv.io/x/gocv"
 )

@@ -1,11 +1,25 @@
-## Network Programming Course Project
-## Phase-1: Virtual Network, MPTCP, MPQUIC Setups
-### We designed a virtual network through a python script using the mininet library. It has two hosts connected through a router.
+
+<br/>
+<br/>
+<img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/818/5112570818_02c498e2-a7fb-423e-8f95-82e7be54f2c3.png?cb=1619086571" algn="center" width="800" height="110"/>
+
+<br/>
+
+## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
+
+<p>
+We designed a virtual network suing a python script with the help of mininet library. It has two hosts connected through a router
+</p>
+
 ## Network Topology
-Hosts - client, server
-Router - router
-Interfaces - client to router 1, client to router 2, router to server
-<br>
+```
+Hosts: client, server
+Router: router
+Interfaces: client to router 1, client to router 2, router to server
+```
+<img src="https://i.ibb.co/jf7Z0rD/img.png"/>
+
+<br/>
 
 ## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
@@ -40,7 +54,7 @@ git clone https://github.com/prat-bphc52/VideoStreaming-MPTCP-MPQUIC
 ### MP-TCP
 Start the server on the Video Streaming Source Host
 
-```
+``` 
 python3 server_mptcp.py localhost -p <port_number>
 ```
 
