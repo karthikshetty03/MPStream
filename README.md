@@ -28,7 +28,6 @@ Interfaces: client to router 1, client to router 2, router to server
 
 ## Phase-2: Video Streaming based on MP-TCP and MP-QUIC
 
-
 Innovation: It allows you to stream your webcam video from one system to the other.You can separately try out MP-TCP or MP-QUIC while using this code. Please check the requirement below for running MP-TCP or MP-QUIC.
 
 <br/>
@@ -42,7 +41,7 @@ For Linux based OS, please refer to the following [link](https://multipath-tcp.o
 
 - Python libraries - **numpy** **opencv-python**
 ```
-python3 -m pip install numpy, opencv-python
+python3 -m pip install numpy opencv-python
 ```
 
 <br/>
@@ -66,31 +65,7 @@ git clone https://github.com/prat-bphc52/VideoStreaming-MPTCP-MPQUIC
 <br/>
 
 ## Execution
-### MP-TCP
-Start the server on the Video Streaming Source Host
-
-``` 
-python3 server_mptcp.py localhost -p <port_number>
-```
-
-Start the client on the target machine
-```
-python3 client_mptcp.py <source_machine_IPv4_Addres> -p <port_number>
-```
-<br/>
-
-### MP-QUIC
-Build and execute server on one host
-```
-go build server-mpquic.go
-./server-mpquic
-```
-Specify the server's host name in client-mpquic.go
-Build and execute client on the other host
-```
-go build client-mpquic.go
-./client-mpquic
-```
+### [See this video for execution steps](https://www.youtube.com/watch?v=Eve80LFapnI)
 <br/>
 
 ### Team Members
