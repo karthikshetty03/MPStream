@@ -9,7 +9,7 @@
 ## Phase-1: Virtual Network using mininet, MPTCP and MPQUIC Setups
 
 <p>
-We designed a virtual network suing a python script with the help of mininet library. It has two hosts connected through a router
+We designed a virtual network using a python script with the help of mininet library. It has two hosts connected through a router
 </p>
 
 <br/>
